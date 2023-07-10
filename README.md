@@ -1,8 +1,20 @@
-## Не забудь звезду
+## Put me star
 
-в файле .development.env конфигурация для бд. Добавить свою.
+in the .development.env file, the configuration for the database. Add your own.
 
-#### npm run start:dev - Запуск
+This:
+Restaurant API
+Architecture of the server application
+JWT Registration/Authorization
+User roles and their verification
+PostgreSQL database + Sequelize
+Working with the file system
+API documentation
+develop/production configuration
+Data validation
+Docker/docker-compose
+
+#### npm run start:dev - start
 
 ##
 

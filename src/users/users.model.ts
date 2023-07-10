@@ -11,21 +11,21 @@ interface UserCreationAttrs {
 
 @Table({tableName: 'users'})
 export class User extends Model<User, UserCreationAttrs> {
-    @ApiProperty({example: '1', description: 'Уникальный идентификатор'})
+    @ApiProperty({example: '1', description: 'Unique identifier'})
     @Column({type: DataType.INTEGER, unique: true, autoIncrement: true, primaryKey: true})
     id: number;
-    @ApiProperty({example: 'user@mail.ru', description: 'Почтовый адрес'})
+    @ApiProperty({example: 'user@gmail.ru', description: 'Postal address'})
     @Column({type: DataType.STRING, unique: true, allowNull: false})
     email: string;
-    @ApiProperty({example: '12345678', description: 'Пароль'})
+    @ApiProperty({example: '12345678', description: 'Password'})
     @Column({type: DataType.STRING, allowNull: false})
     password: string;
 
-    @ApiProperty({example: 'true', description: 'Забанен или нет'})
+    @ApiProperty({example: 'true', description: 'Banned or not'})
     @Column({type: DataType.BOOLEAN, defaultValue: false})
     banned: boolean;
 
-    @ApiProperty({example: 'За хулиганство', description: 'Причина блокировки'})
+    @ApiProperty({example: 'За хулиганство', description: 'Reason for blocking'})
     @Column({type: DataType.STRING, allowNull: true})
     banReason: string;
 
